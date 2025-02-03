@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Health care Clinic
+        link(rel="shortcut icon", href="../src/images/logo.jpg", type="image/x-icon")
+        style 
+            include ../src/css/index.css
+        script 
+            include ../src/js/index.js
+    body   
+        main
+            img(src="../src/images/logo.svg", alt="logo")
+            form(action="/", method="post").form#form
+                label(for="Fname").labels#label-1 Enter your first name *
+                input(type="text", name='Fname', autocomplete="off", required).inputs#input-1
+
+                label(for="Lname").labels#label-2 Enter your Last name *
+                input(type="text", name='Lname', autocomplete="off", required).inputs#input-2
+
+                label(for="Type").labels#label-3 Selct your diseases type *
+                select(name="Type", required).inputs#input-3
+                    option(value="Skin").options Skin
+                    option(value="Stomach").options stomach
+
+                label(for="Symptoms").labels#label-4 Enter your disease symptoms *
+                input(type="text", name='Symptoms', autocomplete="off" required).inputs#input-4
+
+                label(for="Phone").labels#label-5 Enter your phone number *
+                input(type="number", name='Phone', autocomplete="off", required).inputs#input-5
+
+                label(for="Amount").labels#label-6 Enter your amount *
+                input(type="number", name='Amount', autocomplete="off", required).inputs#input-6
+
+                button(type="submit").submit#submit Submit
+
+            //- Index
+
